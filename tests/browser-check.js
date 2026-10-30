@@ -6,7 +6,7 @@
  const open=async hash=>{location.hash=hash;await delay();};
  const fill=(selector,value)=>{const e=$(selector);e.value=value;e.dispatchEvent(new Event('input',{bubbles:true}));};
  const finish=()=>{for(let i=0;i<20&&!$('#next').disabled;i++)$('#next').click();};
- const {questions}=await import('../content.mjs');
+ const {questions}=await import('./content.mjs');
  for(let u=1;u<=6;u++){
   await open('lesson-'+u);assert(!!$('#diagram svg'),'單元'+u+'渲染圖');
   finish();assert($('#explanation').textContent.includes('執行結束'),'單元'+u+'完成執行');

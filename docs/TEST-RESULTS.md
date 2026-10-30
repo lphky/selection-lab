@@ -27,7 +27,8 @@
 ## 版面
 
 - Chromium 桌面1440×1000、平板768×1024、手機390×844，檢查版面及截圖。
-- 平板尺寸遍歷六個單元，無整頁橫向溢出；手機嵌套單元亦無溢出。
+- 平板及手機尺寸分別遍歷六個單元，均無整頁橫向溢出。
+- 鍵盤聚焦「下一步」後按 Enter 可推進；模擬減少動態效果時 transitionDuration 為 0s。
 - 流程圖可獨立縮放及捲動；控制列保持可見。互動使用原生連結、按鈕、表單及單選控制，提供焦點樣式與文字路徑。
 - 截圖為同目錄 home-desktop.png、lesson-desktop.png、lesson-tablet.png、lesson-mobile.png。
 
@@ -41,4 +42,4 @@ GitHub repo： https://github.com/lphky/selection-lab
 
 GitHub Pages： https://lphky.github.io/selection-lab/
 
-正式網址驗證結果在部署完成後補記。
+正式 GitHub Pages 已開啟並完成同一套88項瀏覽器檢查，全部通過。首頁、CSS、三個 JavaScript 模組及 favicon 均回傳 HTTP 200，模組為正確 JavaScript MIME 類型，未見瀏覽器未處理錯誤。GitHub 的 pages build and deployment 成功；未變更其他專案或現有網域。
